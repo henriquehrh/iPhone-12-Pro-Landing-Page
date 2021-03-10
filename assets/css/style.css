@@ -1,0 +1,273 @@
+@font-face{
+	font-family: Myriad;
+	src: local('../font/MYRIADAT.TTF'), url('../font/MYRIADAT.TTF');
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,1);
+	-webkit-background-clip: initial;
+}
+
+*{
+	font-family: Myriad;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	height: 44px;
+	background-color: rgba(0,0,0,0.92);
+}
+
+.container{
+	width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	display: flex;
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.menu li{
+	margin-right: 40px;
+	margin-left: 40px;
+	font-size: 14px;
+}
+
+.menu a{
+	color: #ccc;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.menu a:hover{
+	color:#FFF;
+}
+
+header .logo img{
+	margin-left: 15px;
+
+}
+
+.productname{
+	font-size: 22px;
+	font-family: inherit;
+	font-weight: bold;
+	color: #FFF;
+	margin-left: 15px;
+}
+
+#productguide{
+	height: 52px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.infoandaction ul{
+	display: flex;
+	color: #fff;
+	list-style: none;
+	font-size: 14px;
+	margin-right: 20px;
+	align-items: center;
+}
+
+.infoandaction ul li{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.infoandaction a{
+	color: #FFF;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.infoandaction a:hover{
+	color: #147ce5;
+}
+
+#buy_button{
+	background-color: #147ce5;
+	border-radius: 25px;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+#buy_button:hover{
+	color:#FFF;
+	opacity: 0.8;
+}
+
+#productvideo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+#productvideo video{
+	margin-left:410px;
+	animation-name: initial_video;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes initial_title {
+    0% {
+    	opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes initial_video {
+    0% {
+    	margin-top: 0;
+
+    }
+    100% {
+        margin-top:160px;
+    }
+}		
+
+.videotitle{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 28px;
+	opacity: 0;
+	margin-top: 80px;
+	position: absolute;
+	animation-name: initial_title;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+.videosubtitle{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 80px;
+	opacity: 0;
+	margin-top: 120px;
+	position: absolute;
+	animation-name: initial_title;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay:3.5s;
+    animation-fill-mode: forwards;
+}
+
+#complete_description{
+	display: flex;
+	justify-content: center;
+}
+
+.longtext{
+	margin-top: 120px;
+	text-align: center;
+	font-size: 24px;
+	color: #a1a1a6;
+	width: 689px;
+	font-weight: bold;
+	letter-spacing: .009em;
+}
+
+.complete_description_align{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.price_description{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24px;
+	color: #a1a1a6;
+	width: 689px;
+	font-weight: bold;
+	letter-spacing: .009em;
+}
+
+.iphone_display{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.iphone_display_title{
+	color: #FFF;
+	margin-top: 100px;
+	font-size: 60px;
+}
+
+.iphone_display img{
+	margin-top: 70px;
+}
+
+.comparison{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFF;
+}
+
+.comparison video{
+	margin-top: 150px;
+}
+
+.i12promax{
+	text-align: right;
+	margin-right: 100px;
+	width: 180px;
+}
+
+.i12promax_title{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.i12promax_display{
+	font-size: 17px;
+	font-weight: bold;
+	color:#a1a1a6;
+}
+
+.i12pro{
+	text-align: left;
+	margin-left: 100px;
+	width: 180px;
+}
+
+.i12pro_title{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.i12pro_display{
+	font-size: 17px;
+	font-weight: bold;
+	color:#a1a1a6;
+}
